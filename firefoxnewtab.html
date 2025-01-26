@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>b0b1@home > newtab</title>
+
+  <style>
+    html {
+      align-items: center;
+      background-color: #3e3e3e;
+      color: #c5c8c6;
+      display: flex;
+      font: 22px/1 "Inconsolata", monospace;
+      height: 100%;
+      justify-content: center;
+    }
+
+    body {
+      background-color: #1d1f21;
+      border-radius: 2px;
+      box-shadow: 1px 1px 6px #1d1f2187;
+      color: #c5c8c6;
+      display: flex;
+      flex-direction: column;
+      min-height: 30ch;
+      min-width: 50vw;
+      padding: 2em;
+	  
+    }
+
+    p {
+      margin: 0;
+    }
+
+    p span {
+      color: #b5bd68;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      font-weight: bold;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      column-gap: 2em;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 1em 0;
+    }
+
+    ul:nth-child(5n + 1) li:first-child {
+      color: #a54242;
+    }
+
+    ul:nth-child(5n + 2) li:first-child {
+      color: #de935f;
+    }
+    
+    ul:nth-child(5n + 3) li:first-child {
+      color: #f0c674;
+    }
+    
+    ul:nth-child(5n + 4) li:first-child {
+      color: #8c9440;
+    }
+
+    ul:nth-child(5n + 5) li:first-child {
+      color: #85678f;
+    }
+
+    li:first-child {
+      font-weight: bold;
+    }
+
+
+    li:last-child {
+      margin: 0 0 1em;
+    }
+
+    p #cursor {
+      background-color: #b5bd68;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0%, 49% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+	
+	.search-form {
+	  width: 20rem;
+	  outline: none;
+	  border: none;
+	  background-color: #1d1f21;
+	  color: #c9c9c9;
+	  font: 19px/1 "Inconsolata", monospace;
+	  padding-top: 10px;
+	}
+  </style>
+</head>
+<body>
+  <p><span>b0b1@home &gt; </span>newtab</p>
+
+  <nav>
+	<ul>
+      <li>/programing</li>
+      <li><a href="https://mendo.mk/Welcome.do">/programing/mendo</a></li>
+	  <li><a href="https://github.com/">/programing/github</a></li>
+	  <li><a href="https://open.kattis.com/">/programing/kattis</a></li>
+	  <li><a href="https://cses.fi/book/book.pdf">/programing/handbook</a></li>
+	</ul>
+	<ul>
+      <li>/entertainement</li>
+      <li><a href="https://www.roblox.com/home">/entertainment/roblox</a></li>
+	  <li><a href="https://youtube.com">/entertainment/youtube</a></li>
+	  <li><a href="https://open.spotify.com/">/entertainment/spotify</a></li>
+	  <li><a href="https://cs.rin.ru/forum/">/entertainment/cs.rin.ru</a></li>
+	  
+	</ul>
+	<ul>
+      <li>/social</li>
+	  <li><a href="https://www.facebook.com/">/social/facebook</a></li>
+	  <li><a href="https://mail.google.com/mail/u/1">/social/gmail</a></li>
+	  <li><a href="https://instagram.com">/social/instagram</a></li>
+	  <li><a href="https://discord.com/channels/@me">/social/discord</a></li>
+    </ul>
+	<ul>
+      <li>/maps</li>
+      <li><a href="https://create.roblox.com/store/decals?creatorName=&includeOnlyVerifiedCreators=true&keyword=&pageNumber=1&querySource=0">/maps/flags</a></li>
+      <li><a href="https://docs.google.com/presentation/u/0/">/maps/docs</a></li>
+	</ul>
+   </nav>
+	<ul>
+      <li>/firefox</li>
+      <li><a href="about:config">/firefox/config</a></li>
+	  <li><a href="about:profiles">/firefox/profiles</a></li>
+	</ul>
+   </nav>
+	
+	<p><span>b0b1@home &gt; </span>search</p>
+	<form method="GET" target="_blank" action="https://duckduckgo.com/?q=">
+		<input id="myTextInput" class="search-form" id='q'tabindex="1" name="q" class="search-box">
+	</form>
+	<script>
+		var input = document.getElementById('myTextInput');
+		input.focus();
+		input.select();
+	</script>
+</body>
+</html>
